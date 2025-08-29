@@ -1,0 +1,20 @@
+[package]
+name = "many-deps"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+smallvec = "1"
+hashbrown = { git = "https://github.com/rust-lang/hashbrown.git", branch = "master" }
+syn = { git = "https://github.com/dtolnay/syn.git", branch = "master" }
+bitflags = { git = "https://github.com/bitflags/bitflags.git", branch = "main" }
+quote = { git = "https://github.com/dtolnay/quote.git", branch = "master" }
+serde = { git = "https://github.com/serde-rs/serde" }
+serde_json = { git = "https://github.com/serde-rs/json" }
+tokio = { git = "https://github.com/tokio-rs/tokio", features = ["full"] }
+reqwest = { git = "https://github.com/seanmonstar/reqwest", features = ["json", "gzip"] }
+tracing = { git = "https://github.com/tokio-rs/tracing" }
+anyhow = { git = "https://github.com/dtolnay/anyhow" }
+thiserror = { git = "https://github.com/dtolnay/thiserror" }
+futures = { git = "https://github.com/rust-lang/futures-rs" }
+bytes = { git = "https://github.com/tokio-rs/bytes" }
